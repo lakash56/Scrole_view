@@ -18,30 +18,37 @@
 
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/article_subheding"
-        android:layout_below="@id/article_heading"
-        android:padding="@dimen/padding_regular"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-        android:text="@string/article_subheading"
-        />
+
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/article_subheding">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/article"
-        android:autoLink="web"
-        android:layout_below="@id/article_subheding"
-        android:lineSpacingExtra="@dimen/line_spacing"
-        android:padding="@dimen/padding_regular"
-        android:text="@string/article_text"
-        />
+        android:layout_below="@id/article_heading">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/article_subheding"
+                android:padding="@dimen/padding_regular"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:text="@string/article_subheading"
+                />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/article"
+                android:autoLink="web"
+                android:layout_below="@id/article_subheding"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_text"
+                />
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
